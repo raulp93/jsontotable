@@ -28,6 +28,7 @@ def main():
 
         with open("request.txt", 'r') as infile:
             text = infile.read()
+            open("request.txt", 'w').close()
 
         if text == 'send table':
             print("request recieved")
